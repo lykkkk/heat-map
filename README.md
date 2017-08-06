@@ -3,10 +3,15 @@
 # First, install the following packages
 # If you have already installed them, skip to the second step
 install.packages("zipcode")
+
 install.packages("ggplot2")
+
 install.packages("maps")
+
 install.packages("viridis")
+
 install.packages("geosphere")
+
 install.packages("ggmap")
 
 # Second, run following function
