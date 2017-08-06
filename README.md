@@ -59,5 +59,5 @@ map <- function(zip='', RUG=''){
 
 ## Third, use the function to get results, just change the zip code in zip='' and the RUG category in RUG=''
 ```
-map(zip='64153', RUG='RUA')
+map(zip='60060', RUG='RUA')
 ```
