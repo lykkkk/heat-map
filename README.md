@@ -1,7 +1,6 @@
 # heat-map
 
-# First, install the following packages
-# If you have already installed them, skip to the second step
+## First, install the following packages. If you have already installed them, skip to the second step
 ```
 install.packages("zipcode")
 install.packages("ggplot2")
@@ -12,7 +11,8 @@ install.packages("ggmap")
 install.packages("maps")
 ```
 
-# Second, run following function
+## Second, run following function
+```
 map <- function(zip='', RUG=''){
   library(zipcode)
   library(ggplot2)
@@ -20,7 +20,7 @@ map <- function(zip='', RUG=''){
   library(viridis)
   library(geosphere)
   library(ggmap)
-  ## remember to change the file location
+  # remember to change the file location
   test <- read.csv("/Users/LYK/Downloads/RUG_provider(2013&2014).csv")
   data(zipcode)
   test <- test[which(test$RUG==RUG),]
@@ -55,7 +55,9 @@ map <- function(zip='', RUG=''){
   TOP10 <- testtop10
   View(TOP10)
 }
+```
 
-# Third, use the function to get results, just change the zip code in zip=''
-# and the RUG category in RUG=''
+## Third, use the function to get results, just change the zip code in zip='' and the RUG category in RUG=''
+```
 map(zip='64153', RUG='RUA')
+```
