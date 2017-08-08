@@ -1,6 +1,11 @@
 # heat-map
 
-## First, install the following packages. If you have already installed them, skip to the second step
+### CMS Public Use File link:
+"https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/SNF.html"
+
+### R code
+
+##### First, install the following packages. If you have already installed them, skip to the second step
 ```
 install.packages("zipcode")
 install.packages("ggplot2")
@@ -11,7 +16,7 @@ install.packages("ggmap")
 install.packages("maps")
 ```
 
-## Second, run following function
+##### Second, run following function
 ```
 map <- function(zip='', RUG=''){
   library(zipcode)
@@ -57,7 +62,7 @@ map <- function(zip='', RUG=''){
 }
 ```
 
-## Third, use the function to get results, just change the zip code in zip='' and the RUG category in RUG=''
+##### Third, use the function to get results, just change the zip code in zip='' and the RUG category in RUG=''
 ```
 map(zip='60060', RUG='RUA')
 ```
